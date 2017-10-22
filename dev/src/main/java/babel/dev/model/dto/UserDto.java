@@ -1,18 +1,12 @@
-package DAO;
+package babel.dev.model.dto;
 
 import java.util.List;
-
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
 
 @Data
-@Document(collection="user")
-public class UserEntity {
-	
+public class UserDto {
 	//attr
-	@Id
 	private String id;
 	private String name;
 	private String surname;
@@ -20,5 +14,5 @@ public class UserEntity {
 	private String pass;
 	private String email;
 	private String languaje;
-	private List<UserEntity> listaAmigos;
+	private List<UserDto> listaAmigos;
 }

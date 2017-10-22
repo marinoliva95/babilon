@@ -1,11 +1,10 @@
-package mapper;
+package babel.dev.mapper;
 
 import java.util.function.Function;
 
 import org.springframework.stereotype.Component;
-
-import DAO.UserEntity;
-import DTO.UserDto;
+import babel.dev.model.dao.UserEntity;
+import babel.dev.model.dto.UserDto;
 
 @Component
 public class UserMapper implements Function<UserEntity, UserDto> {

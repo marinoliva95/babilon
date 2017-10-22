@@ -1,0 +1,8 @@
+mongo:
+  image: mongo:latest
+  ports:
+  - 27017:27017
+mongo-client:
+  image: mongoclient/mongoclient:latest
+  ports:
+  - 3030:3000
