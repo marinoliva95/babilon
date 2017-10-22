@@ -1,4 +1,4 @@
-package controller;
+package babel.dev.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 
