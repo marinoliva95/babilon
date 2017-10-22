@@ -1,15 +1,12 @@
-package ServiceImpl;
+package babel.dev.service.userservice;
 
 import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import DAO.UserEntity;
-import DTO.UserDto;
-import Service.UserService;
-import mapper.UserMapper;
-import repository.UserRepository;
+import babel.dev.mapper.UserMapper;
+import babel.dev.model.dao.UserEntity;
+import babel.dev.model.dto.UserDto;
+import babel.dev.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -21,7 +18,7 @@ public class UserServiceImpl implements UserService{
 	
 	@Override
 	public UserDto findUser(String id) {
-		return mapper.apply(repository.findUser(id));
+    return mapper.apply(repository.findOne(id));
 	}
 	
 	@PostConstruct

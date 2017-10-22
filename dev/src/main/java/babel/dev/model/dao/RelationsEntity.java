@@ -1,4 +1,4 @@
-package DAO;
+package babel.dev.model.dao;
 
 import java.util.Date;
 
